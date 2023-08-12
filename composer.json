@@ -1,23 +1,21 @@
 {
-    "name": "orhanerday/open-ai",
+    "name": "test/training-app",
     "description": "OpenAI GPT-3 Api Client in PHP",
     "keywords": [
         "orhanerday",
         "open-ai"
     ],
-    "homepage": "https://github.com/orhanerday/open-ai",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Orhan Erday",
-            "email": "orhanerday@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": ">=7.4",
         "ext-curl": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "orhanerday/open-ai": "^4.8",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "phpoffice/phpword": "^1.1",
+        "smalot/pdfparser": "^2.7",
+        "spatie/pdf-to-text": "^1.52",
+        "thiagoalessio/tesseract_ocr": "^2.12"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
