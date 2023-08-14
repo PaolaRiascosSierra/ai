@@ -111,7 +111,6 @@ function summaryAudio() {
     ]);
 
     $d = json_decode($completion);
-    var_dump($d);
     echo $d->choices[0]->text;
 
 } 
