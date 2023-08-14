@@ -10,7 +10,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory as SpreadsheetIOFactory;
 
 use Orhanerday\OpenAi\OpenAi;
 
-$open_ai = new OpenAi('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');
+$open_ai = new OpenAi('TOKEN');
 
 
 // header('Content-type: text/event-stream');
