@@ -10,7 +10,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory as SpreadsheetIOFactory;
 
 use Orhanerday\OpenAi\OpenAi;
 
-$open_ai = new OpenAi('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');
+$open_ai = new OpenAi('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');
 
 
 // header('Content-type: text/event-stream');
@@ -61,6 +61,7 @@ function generateResponse($text) {
      ]);
 
      $d = json_decode($chat);
+     var_dump($d);
      echo $d->choices[0]->message->content;
 }
 

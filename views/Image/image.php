@@ -8,12 +8,8 @@
     </div>
 
     <script>
-        async function generateImage() {
-            const descriptionInput = document.getElementById("description").value;
-            //const generatedImageElement = document.getElementById("generatedImage");
-
-            // Aquí deberías hacer la llamada a la API de OpenAI para generar la imagen
-            // y obtener la URL de la imagen generada.
+        function generateImage() {
+            const descriptionInput = $("#description").val();
 
             const xhr = new XMLHttpRequest();
             xhr.open('POST', '/server.php', true);
@@ -30,11 +26,5 @@
             };
 
             xhr.send(JSON.stringify({ image: descriptionInput }));
-
-            // Por ahora, usaremos una imagen de ejemplo
-            const exampleImageUrl = "https://via.placeholder.com/300";
-
-            // Mostrar la imagen generada en pantalla
-            generatedImageElement.src = exampleImageUrl;
         }
     </script>
